@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">prueba</string>
+    <string-array name="genero">
+        <item>Macho</item>
+        <item>Hembra</item>
+    </string-array>
+    <string-array name="raza">
+        <item>mini toy</item>
+        <item>pequeñas</item>
+        <item>medianas</item>
+        <item>grandes</item>
+        <item>gigantes</item>
+    </string-array>
+    <string-array name="tipo">
+        <item>Tipo de calculo</item>
+    </string-array>
+</resources>
+
+

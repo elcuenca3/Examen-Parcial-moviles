@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculoIMC">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="297dp"
+        android:layout_height="470dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <EditText
+            android:id="@+id/peso"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="20dp"
+            android:background="#DADADA"
+            android:ems="10"
+            android:hint="peso coporal kg"
+            android:inputType="number|textPersonName" />
+
+        <EditText
+            android:id="@+id/hombro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#DADADA"
+            android:ems="10"
+            android:hint="altura de hombros cm"
+            android:inputType="number|textPersonName"
+            android:paddingBottom="20dp" />
+
+        <EditText
+            android:id="@+id/occipucio"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="#DADADA"
+            android:ems="10"
+            android:hint="accioucio a la base de la cola cm"
+            android:inputType="number|textPersonName" />
+
+        <Spinner
+            android:id="@+id/genero"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginBottom="20dp"
+            android:addStatesFromChildren="false"
+            android:clipChildren="false"
+            android:entries="@array/genero" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginBottom="20dp"
+            android:background="#DADADA"
+            android:clickable="false"
+            android:ems="10"
+            android:hint="nombre"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/raza"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:entries="@array/raza"
+
+            />
+
+
+        <Spinner
+            android:id="@+id/tipoCal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/tipo" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:text="Calcula IMC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="154dp"
+        android:layout_height="43dp"
+        android:text="IMC CANINO"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="271dp"
+        android:layout_height="243dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233"
+        app:srcCompat="@drawable/eca_cachorros_de_perro_20692860_20210902111624" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="249dp"
+        android:layout_height="52dp"
+        android:text="Servicio de mascotas"
+        android:textColor="#3C60DA"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <Button
+        android:id="@+id/caninoimc"
+        android:layout_width="301dp"
+        android:layout_height="52dp"
+        android:text="IMC Canino"
+        app:icon="@drawable/imc"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/machoG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <Button
+        android:id="@+id/machoG"
+        android:layout_width="299dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="92dp"
+        android:text="Grasa Corporal Macho"
+        app:icon="@drawable/macho"
+        app:iconPadding="5dp"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <Button
+        android:id="@+id/hembraG"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+        android:text="Grasa corporal Hembra"
+        app:icon="@drawable/hembra"
+        app:iconPadding="10dp"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/machoG"
+        app:layout_constraintVertical_bias="0.219" />
+</androidx.constraintlayout.widget.ConstraintLayout>
